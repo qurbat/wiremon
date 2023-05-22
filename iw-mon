@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+ABC=$1
+
+sudo service NetworkManager stop && sudo ifconfig $ABC down && sudo iwconfig $ABC mode monitor && sudo ifconfig $ABC up
